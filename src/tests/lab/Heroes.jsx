@@ -5,7 +5,7 @@ import calculateHeroStrengthPower from "../../utils/heroStrength"
 
 export default function HeroesFromAPI(){
 
-     const [heroes, setHeroes] = useState('');
+     const [heroes, setHeroes] = useState([]);
   const [ error, setError] = useState('');
 
   useEffect(() => {
