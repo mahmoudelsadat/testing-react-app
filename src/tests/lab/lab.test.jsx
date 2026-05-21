@@ -100,8 +100,8 @@ describe("HeroesFromAPI component", () => {
     render(<HeroesFromAPI />);
 
     
-    const heading = await screen.findByRole("heading", { name: /Failed to fetch heroes/i });
-    expect(heading).toBeInTheDocument();
+    const heading = await screen.findByRole("heading");
+    expect(heading).toHaveTextContent("Failed to fetch heroes");
   });
   });
 
